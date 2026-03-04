@@ -92,7 +92,3 @@ select avg(marks) from student;
 
 -- Q22: Find lowest marks scored.
 select min(marks) from student;
-
--- Q23: Count numver of students in each city
-select city, count(name) from student group by city;
-
