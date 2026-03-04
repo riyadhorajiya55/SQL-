@@ -73,3 +73,26 @@ select * from student order by marks ASC;
 
 -- Q16: Display top 3 students with highest marks.
 select * from student order by marks DESC limit 3;
+
+-- Aggregate Functions
+-- Q17: Find the maximum marks scored by any student.
+select max(marks) from student;
+
+-- Q18: Count the number of students whose names are present in the table.
+select count(name) from student;
+
+-- Q19: Count total number of students.
+select count(*) from student;
+
+-- Q20: Find total marks of all students.
+select sum(marks) from student;
+
+-- Q21: Find average marks of students.
+select avg(marks) from student;
+
+-- Q22: Find lowest marks scored.
+select min(marks) from student;
+
+-- Q23: Count numver of students in each city
+select city, count(name) from student group by city;
+
